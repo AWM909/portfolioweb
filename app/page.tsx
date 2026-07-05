@@ -372,7 +372,7 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-32 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center">
+      <section id="home" className="pt-32 pb-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 right-1/4 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl animate-float-slow animate-pulse-glow"></div>
           <div className="absolute bottom-20 left-1/4 w-80 h-80 bg-teal-600/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
@@ -382,11 +382,10 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto relative z-10 w-full">
           <div className="max-w-4xl">
             <h1 className={`text-7xl sm:text-8xl font-bold mb-6 leading-tight ${isLoaded ? 'animate-fade-in-up stagger-1' : 'opacity-0'}`}>
-              Hi, I'm <span className="text-teal-400 text-gradient-animate">Creative</span>
+              Hi, I'm <span className="text-teal-400 text-gradient-animate">Wasay</span>
             </h1>
             <p className={`text-xl sm:text-2xl text-white/70 mb-8 leading-relaxed max-w-2xl ${isLoaded ? 'animate-fade-in-up stagger-2' : 'opacity-0'}`}>
-              Full-stack developer and designer crafting digital experiences. I build fast, accessible, and visually engaging web applications that stand out.
-            </p>
+             Software developer building AI-powered products. Learning C++, passionate about startups, marketing, and growth.            </p>
             <div className={`flex gap-6 flex-wrap ${isLoaded ? 'animate-fade-in-up stagger-3' : 'opacity-0'}`}>
               <a
                 href="#about"
@@ -404,7 +403,7 @@ export default function Portfolio() {
             </div>
 
             {/* Scroll indicator */}
-            <div className={`mt-20 flex flex-col items-center gap-2 ${isLoaded ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}>
+            <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 ${isLoaded ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}>
               <p className="text-white/50 text-sm">Scroll to explore</p>
               <div className="w-6 h-10 border-2 border-teal-400/50 rounded-full flex justify-center animate-pulse-glow">
                 <div className="w-1 h-2 bg-teal-400 rounded-full mt-2 animate-bounce"></div>
@@ -428,17 +427,17 @@ export default function Portfolio() {
               <div className={`w-24 h-1.5 bg-gradient-to-r from-teal-400 to-teal-300 rounded-full mb-10 ${aboutInView ? 'animate-slide-in-left stagger-2' : 'opacity-0'}`}></div>
               
               <p className={`text-lg text-white/70 leading-relaxed mb-6 ${aboutInView ? 'animate-fade-in-up stagger-3' : 'opacity-0'}`}>
-                I'm a passionate developer with 5+ years of experience building web applications. I specialize in creating beautiful, performant interfaces and robust backend systems that users love.
+                I'm a passionate software developer with a strong interest in software engineering and game development. I'm constantly learning, improving my programming skills, and challenging myself by building personal projects that turn ideas into real products.
               </p>
               <p className={`text-lg text-white/70 leading-relaxed mb-10 ${aboutInView ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}>
-                When I'm not coding, you'll find me exploring design trends, contributing to open source, or writing about web development.
+                Beyond coding, I'm deeply into AI, entrepreneurship, startups, marketing, and product growth. I believe the best products are built where great engineering meets great marketing.
               </p>
               
               <div className="space-y-6">
                 {[
-                  { title: "Frontend", skills: "React, Vue.js, TypeScript, Tailwind CSS, Next.js" },
-                  { title: "Backend", skills: "Node.js, Python, PostgreSQL, MongoDB, Firebase" },
-                  { title: "Tools", skills: "Git, Docker, AWS, Figma, VS Code" }
+                  { title: "Frontend", skills: "HTML, Tailwind CSS," },
+                  { title: "Backend", skills: "Node.js, Python, C++" },
+                  { title: "Tools", skills: "Git, Qt Creator, Figma, VS Code" }
                 ].map((skill, i) => (
                   <div key={skill.title} className={`${aboutInView ? `animate-fade-in-up stagger-${4 + i}` : 'opacity-0'}`}>
                     <h3 className="text-teal-400 font-bold mb-2 text-lg">{skill.title}</h3>
@@ -454,42 +453,7 @@ export default function Portfolio() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-teal-600 to-teal-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 animate-float"></div>
                 
                 <div className="relative aspect-square bg-gradient-to-br from-black via-teal-900/20 to-black rounded-2xl overflow-hidden border-2 border-teal-400/50 hover-lift">
-                  {/* Replace this entire div with your image: */}
-                  {/* 
-                    HOW TO ADD YOUR IMAGE:
-                    
-                    Option 1 - Direct Image File:
-                    Replace this div with:
-                    <img 
-                      src="/your-image.jpg" 
-                      alt="Your Name" 
-                      className="w-full h-full object-cover"
-                    />
-                    
-                    Option 2 - Image URL:
-                    <img 
-                      src="https://your-image-url.com/photo.jpg" 
-                      alt="Your Name" 
-                      className="w-full h-full object-cover"
-                    />
-                    
-                    Option 3 - Avatar/Profile Photo:
-                    Put your image in the public folder and reference it:
-                    <img 
-                      src="/profile.jpg" 
-                      alt="Your Name" 
-                      className="w-full h-full object-cover"
-                    />
-                  */}
-                  <div className="w-full h-full flex flex-col items-center justify-center text-white/40 hover:text-white/60 transition-colors cursor-pointer group-hover:text-white/50">
-                    <div className="text-center space-y-3">
-                      <div className="text-6xl">📸</div>
-                      <div className="text-lg font-semibold">Add Your Photo</div>
-                      <div className="text-sm max-w-xs">
-                        Replace with your image file or URL (see code comments for instructions)
-                      </div>
-                    </div>
-                  </div>
+                  <img src="/profile.jpg" alt="Wasay" className="w-full h-full object-cover" />
                 </div>
 
                 {/* Floating accent elements */}
@@ -512,24 +476,27 @@ export default function Portfolio() {
           <div className={`w-24 h-1.5 bg-gradient-to-r from-teal-600 to-teal-400 rounded-full mx-auto mb-12 ${contactInView ? 'animate-slide-in-left stagger-2' : 'opacity-0'}`}></div>
           
           <p className={`text-xl text-black/70 mb-16 leading-relaxed ${contactInView ? 'animate-fade-in-up stagger-2' : 'opacity-0'}`}>
-            I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
-          </p>
+          I'm always open to discussing new projects, collaborations, and opportunities. Whether you have an idea to build, a question, or simply want to connect, feel free to get in touch.          </p>
 
           <div className="flex gap-6 justify-center mb-16 flex-wrap">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:abdulwasaymuhammad909@gmail.com"
               className={`group inline-flex items-center gap-3 px-8 py-4 bg-black text-white font-bold rounded-xl hover:bg-teal-600 transition-all hover-lift text-lg ${contactInView ? 'animate-fade-in-up stagger-3' : 'opacity-0'}`}
             >
               <Mail size={22} /> Email Me
             </a>
             <a
-              href="#"
+              href="https://github.com/AWM909"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group inline-flex items-center gap-3 px-8 py-4 border-3 border-black text-black font-bold rounded-xl hover:bg-black hover:text-white transition-all hover-lift text-lg ${contactInView ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}
             >
               <ArrowRight size={22} /> GitHub
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/abdulwasaymuhammad"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group inline-flex items-center gap-3 px-8 py-4 border-3 border-black text-black font-bold rounded-xl hover:bg-black hover:text-white transition-all hover-lift text-lg ${contactInView ? 'animate-fade-in-up stagger-5' : 'opacity-0'}`}
             >
               <ArrowRight size={22} /> LinkedIn
@@ -537,7 +504,7 @@ export default function Portfolio() {
           </div>
 
           <div className={`text-black/50 text-sm ${contactInView ? 'animate-fade-in-up stagger-6' : 'opacity-0'}`}>
-            © 2024 Your Name. Built with React + Tailwind CSS. Hosted on Vercel.
+            © 2026 Wasay. Hosted on Vercel.
           </div>
         </div>
       </section>
