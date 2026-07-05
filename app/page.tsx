@@ -402,13 +402,6 @@ export default function Portfolio() {
               </a>
             </div>
 
-            {/* Scroll indicator */}
-            <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 ${isLoaded ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}>
-              <p className="text-white/50 text-sm">Scroll to explore</p>
-              <div className="w-6 h-10 border-2 border-teal-400/50 rounded-full flex justify-center animate-pulse-glow">
-                <div className="w-1 h-2 bg-teal-400 rounded-full mt-2 animate-bounce"></div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
